@@ -1,2 +1,2 @@
-# moneytracker
-expense tracking app
+# rails-webapp-base
+some base architecture for making a rails webapp
