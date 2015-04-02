@@ -1,0 +1,8 @@
+<% provide(:title, "Transactions") %>
+<div class="center jumbotron">
+  <h2>
+      <% @transactions.each do |transaction| %>
+        <div><%= transaction.inspect %></div>
+      <% end %>    
+  </h2>
+</div>

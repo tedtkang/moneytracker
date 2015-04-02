@@ -1,0 +1,26 @@
+<% provide(:title, "Enter transactions") %>
+<h1>Enter your transaction</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@transaction) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      
+      <%= f.label :transaction_date %>
+      <%= f.email_field :transaction_date, class: 'form-control' %>
+
+      <%= f.label :amount %>
+      <%= f.password_field :amount, class: 'form-control' %>
+
+      <%= f.label :description, "Description" %>
+      <%= f.password_field :description, class: 'form-control' %>
+
+      <%= f.label :location, "Location" %>
+      <%= f.password_field :location, class: 'form-control' %>
+
+      <%= f.label :category, "Category" %>
+      <%= f.password_field :category, class: 'form-control' %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

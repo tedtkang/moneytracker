@@ -7,7 +7,10 @@ gem 'rails', '4.2.0'
 gem 'bcrypt', '3.1.7'
 # For creating fake seed users
 gem 'faker', '1.4.2'
-
+# For managing front-end assets (like Angular)
+gem "bower-rails", "~> 0.9.2" 
+# Angular rails
+gem 'angular-rails-templates'
 # User sass with bootstrap for styling
 gem 'bootstrap-sass',       '3.2.0.0'
 # awesome print!
@@ -26,7 +29,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'  -- Conflicts with angular so remove
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
