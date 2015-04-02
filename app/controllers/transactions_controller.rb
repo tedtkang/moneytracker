@@ -1,7 +1,7 @@
 class TransactionsController < ApplicationController
 
   def index
-    @user = current_user
+    @user = current_user || User.new
     @transactions = @user.transactions
   end
 
